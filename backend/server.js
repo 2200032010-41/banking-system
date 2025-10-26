@@ -29,13 +29,8 @@ app.get("/", (req, res) => {
   res.send("💰 Banking & Finance Management System API is running...");
 });
 
-// Server: for local dev use 'localhost', for LAN use '0.0.0.0'
+// Server: bind to 0.0.0.0 and use PORT from environment for Render compatibility
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, "localhost", () =>
-  console.log(`🚀 Server running on http://localhost:${PORT}`)
+app.listen(PORT, "0.0.0.0", () =>
+  console.log(`🚀 Server running on http://0.0.0.0:${PORT}`)
 );
-
-// For LAN access from other devices (uncomment if needed):
-// app.listen(PORT, "0.0.0.0", () =>
-//   console.log(`🚀 Server running on http://0.0.0.0:${PORT}`)
-// );
