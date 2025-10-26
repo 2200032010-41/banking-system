@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "client",
   "version": "0.1.0",
   "private": true,
@@ -36,5 +37,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+=======
+  "dependencies": {
+    "nodemailer": "^7.0.9"
+>>>>>>> e44cb17a9dfd5f518fd084b5792699073d76cc2c
   }
 }
